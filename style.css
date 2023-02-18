@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 5000px;
+}
+
+.child {
+  padding: 30px;
+  line-height: 60px;
+}
+header {
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px gray solid;
+  color: black;
+  background-color: white;
+}
+
+.logo {
+  font-size: 40px;
+}
+.btn {
+  width: 180px;
+  height: 50px;
+  background: #dcdcdc66;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.truck {
+  padding: 0 3px;
+  display: flex;
+  width: 70px;
+  height: 25px;
+  border-radius: 25px;
+  align-items: center;
+  box-shadow: inset 1px 0px 5px grey;
+}
+.truck span {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  transform: translateX(-2px);
+  transition: 0.5s all;
+  box-shadow: inset 0px 0px 12px 1px grey;
+  background-color: white;
+}
+
+.truck.active {
+  background-color: #00a2ff;
+}
+.truck.active span {
+  transform: translateX(41px);
+  color: white;
+}
